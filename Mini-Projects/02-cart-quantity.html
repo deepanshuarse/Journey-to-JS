@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cart</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`);">
+      Show Quantity
+    </button>
+
+    <button onclick="
+      cartQuantity += 1;
+
+    /* wew have even short way to add the +1 to the variable  is 
+    cartQuantity ++ 
+    here ++ will means addind the another +1 to the 
+    same varibale for now the variable is cartQuantity*/
+
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      Add to Cart
+    </button>
+
+    <button onclick="
+      cartQuantity += 2;
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      +2
+    </button>
+
+    <button onclick="
+      cartQuantity += 3;
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      +3
+    </button>
+
+    <button onclick="
+      cartQuantity += 4;
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      +4
+    </button>
+
+    <button onclick="
+      cartQuantity += 5;
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      +5
+    </button>
+
+    <button onclick="
+      cartQuantity -= 2;
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      -2
+    </button>
+
+    <button onclick="
+      cartQuantity -= 3;
+      console.log(`Cart Quantity: ${cartQuantity}`);">
+      -3
+    </button>
+
+    <button onclick="
+      cartQuantity =  0;
+      console.log('Cart was reset.')
+      console.log(`Cart Quantity: 0`);">
+      Reset Cart
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+      let added = cartQuantity + 1;
+    </script>
+  </body>
+</html>
