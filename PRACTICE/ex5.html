@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    function greet (name = 'there') {
+      console.log(`hello ${name}`);
+    }
+
+    greet();
+    */
+
+    function convertToFahrenheite(celsius) {
+      return (celsius * (9/5)) + 32 ;
+    }
+
+    function convertToCelsius(fahrenheit) {
+      return (fahrenheit - 32) * 5/9 ;
+    }
+
+    function convertTemperature(degree, unit) {
+      if (unit === 'F') {
+        const result = convertToFahrenheite(degree);
+        return result;
+      } else if (unit === 'C') {
+        convertToCelsius(degree);
+        const result = convertToFahrenheite(degree);
+        return result;
+      }
+    }
+
+    console.log(convertTemperature(25,'C'))
+  </script>
+</body>
+</html>

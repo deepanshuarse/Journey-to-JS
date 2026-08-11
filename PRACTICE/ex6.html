@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function convertLength (length, from, to) {
+      if (from === 'miles' && to === 'km') {
+        const result = length * 1.6;
+        console.log(`${result}${to}`);
+      } else if (from === 'km' && to === 'miles') {
+        const result = length/1.6
+        console.log(`${result}${to}`);
+      } else if (from === 'km' && to === 'ft') {
+        const result = length * 3281;
+        console.log(`${result}${to}`);
+      } else if (from === 'miles' && to === 'ft') {
+        const result = length * 5280;
+        console.log(`${result}${to}`);
+      } else{
+        console.log('lol');
+      }
+    }
+    convertLength(5,'lb','lb');
+  </script>
+</body>
+</html>
