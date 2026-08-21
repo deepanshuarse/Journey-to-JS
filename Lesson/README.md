@@ -1,6 +1,6 @@
 > **Learning JavaScript from the ground up — one concept, one mistake, and one commit at a time.**
 
-Welcome to my JavaScript learning repository.
+## Welcome to my JavaScript learning repository.
 
 This repo documents my progress as I learn JavaScript fundamentals, experiment with code, break things, fix them, and gradually move toward building real web applications.
 
