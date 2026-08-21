@@ -1,7 +1,3 @@
-from pathlib import Path
-
-readme = r'''# ⚡ Journey to JavaScript
-
 > **Learning JavaScript from the ground up — one concept, one mistake, and one commit at a time.**
 
 Welcome to my JavaScript learning repository.
