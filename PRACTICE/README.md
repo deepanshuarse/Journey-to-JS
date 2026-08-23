@@ -40,29 +40,10 @@ The goal of this repository is to document my progress while learning JavaScript
 
 Instead of only following tutorials, I’m writing and uploading my own practice code so I can see how my skills improve over time.
 
-## 🛠️ Technologies
-
-- HTML
-- JavaScript
-- Local Storage
-- Git & GitHub
 
 ## 📈 Progress
 
 This repository is continuously updated as I learn new concepts and build more projects.
-
-### Current Progress
-
-- [x] JavaScript basics
-- [x] Booleans
-- [x] Functions
-- [x] Objects
-- [x] Local Storage
-- [x] Calculator
-- [x] Shopping cart practice
-- [ ] DOM manipulation
-- [ ] More advanced JavaScript
-- [ ] Larger projects
 
 ## 💡 Note
 
