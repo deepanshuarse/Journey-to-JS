@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cart</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button onclick="
+    giveOutput();
+    ">
+      Show Quantity
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity + 1 > 10) {
+          alert('The Cart is full');
+        } else {
+          cartQuantity += 1;
+          }
+        giveOutput();
+      "
+    >
+      Add to Cart
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity + 2 > 10) {
+          console.log('The Cart is full');
+          alert('The Cart is full');
+        } else {
+          cartQuantity += 2;
+          }
+        giveOutput();
+      "
+    >
+      +2
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity + 3 > 10) {
+          alert('The Cart is full');
+        } else {
+          cartQuantity += 3;
+          }
+        giveOutput();
+      "
+    >
+      +3
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity + 4 > 10) {
+          alert('The Cart is full');
+        } else {
+          cartQuantity += 4;
+          }
+        giveOutput();
+      "
+    >
+      +4
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity + 5 > 10) {
+          alert('The Cart is full');
+        } else {
+          cartQuantity += 5;
+        }
+        giveOutput();
+      "
+    >
+      +5
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity - 1 < 0) {
+          alert('Not enough item in the cart');
+        } else {
+          cartQuantity -= 1;
+        }
+        giveOutput();
+      "
+    >
+      Remove from cart
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity - 2 < 0) {
+          alert('Not enough item in the cart');
+        } else {
+          cartQuantity -= 2;
+        }
+        giveOutput();
+      "
+    >
+      -2
+    </button>
+
+    <button
+      onclick="
+        if (cartQuantity - 3  < 0) {
+          alert('Not enough item in the cart');
+        } else {
+          cartQuantity -= 3;
+        }
+        giveOutput();
+      "
+    >
+      -3
+    </button>
+
+    <button
+      onclick="
+        cartQuantity = 0;
+        giveOutput();
+      "
+    >
+      Reset Cart
+    </button>
+
+    <p class="js-output"></p>
+
+    <script>
+      let cartQuantity = 0;
+      let added = cartQuantity + 1;
+
+      function giveOutput () {
+        document.querySelector('.js-output')
+          .innerHTML = `Cart quantity: ${cartQuantity}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM practice</title>
+  </head>
+  <body>
+    <input type="text" class="js-text" placeholder="type" onkeyup="output()">
+    <p class="js-output"></p>
+    <script>
+      function output () {
+        const text = document.querySelector('.js-text').value;
+        console.log(text)
+        document.querySelector('.js-output')
+          .innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
