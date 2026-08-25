@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      /* The word "toggle" means turn on/off. */
+      .toggle-button {
+        background-color: rgb(230, 230, 230);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="toggle-button js-button"
+      onclick="
+        const button = document.querySelector('.js-button');
+        colourChange(button);
+      "
+    >
+      Gaming
+    </button>
+
+    <button
+      class="toggle-button js-button-2"
+      onclick="
+        const button = document.querySelector('.js-button-2');
+        colourChange(button);
+      "
+    >
+      Music
+    </button>
+
+    <button
+      class="toggle-button js-button-3"
+      onclick="
+        const button = document.querySelector('.js-button-3');
+        colourChange(button);
+      "
+    >
+      Tech
+    </button>
+
+    <script>
+      // we have to put make the code for each button and 
+      // the class should also be diffrent from the other buttons 
+      // ### main point is to make the class diffrent form others ###
+
+      function colourChange (button) {
+        if (!button.classList.contains('is-toggled')) {
+          button.classList.add('is-toggled');
+        } else {
+          button.classList.remove('is-toggled');
+        }
+      }
+    </script>
+  </body>
+</html>
