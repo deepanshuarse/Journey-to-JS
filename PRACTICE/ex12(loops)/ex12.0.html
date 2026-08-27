@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>loops</title>
+  </head>
+  <body>
+    <script>
+      const nums = [10, 20, 30];
+      console.log(nums);
+      nums[2] = 99;
+      console.log(nums);
+
+      function getLastValue(array) {
+        const lastIndex = array.length - 1;
+        return array[lastIndex];
+      }
+      console.log(getLastValue([1, 20, 22, 24, 5]));
+      console.log(getLastValue(["hi", "hello", "hey"]));
+
+      function arraySwap(array) {
+        const last = array[0];
+        array[0] = array[array.length - 1];
+        array[array.length - 1] = last;
+        return array;
+      }
+
+      console.log(arraySwap([1, 20, 22, 24, 5]));
+      console.log(arraySwap(["good", "hello", "hi"]));
+
+
+      // we can also do direct swap but this is from gpt
+      /*
+      function arraySwap(array) {
+        [array[0], array[array.length - 1]] = [
+          array[array.length - 1],
+          array[0],
+        ];
+
+        return array;
+      }
+
+      console.log(arraySwap([1, 20, 22, 24, 500]));
+      */
+    </script>
+  </body>
+</html>
