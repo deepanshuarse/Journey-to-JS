@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loop</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function search (array) {
+        let index = -1;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === 'search') {
+            index = i;
+            break;
+          }
+        }
+        console.log(`search is at ${index}`);
+      }
+
+      search(['not','found']);
+      search(['green','world','search','book','search']);
+      */
+
+
+      function findIndex (array ,word) {
+        let index = -1;
+
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            index = i;
+            break;
+          }
+        }
+        console.log(index);
+      }
+      
+      findIndex(['green','blue','red'],'yellow');
+      findIndex(['green','blue','red'],'blue');
+      findIndex(['green','blue','red'],'red');
+      
+      
+    </script>
+  </body>
+</html>
