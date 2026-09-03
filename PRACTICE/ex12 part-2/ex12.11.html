@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      function findIndex(array, word) {
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            return i;
+          }
+        }
+        return -1;
+      }
+
+      // 2
+
+      function unique (array) {
+        const result = [];
+        for (let i = 0; i < array.length; i++) {
+          if (findIndex(result, array[i]) === -1) {
+            result.push(array[i]);
+          }
+        }
+        return result;
+      }
+
+      console.log(unique(['green','blue','red','red']));
+      // console.log(findIndex(["green", "blue", "red", "red"], "red"));
+      // findIndex(['green','blue','red'],'blue');
+      // findIndex(['green','blue','red'],'red');
+    </script>
+  </body>
+</html>
