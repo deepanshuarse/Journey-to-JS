@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loop</title>
+  </head>
+  <body>
+    <script>
+      function removeEgg (foods) {
+        const foodsCopy = foods.slice();
+        const reversedFoods = foodsCopy.reverse();
+
+         // Advanced technique:
+        // Since foods.slice() results in an array, we
+        // can also use .reverse() directly like this:
+        // foods.slice().reverse();
+
+        // This technique is called "method chaining"
+        // because we use one method after another
+        // (like a chain of methods).
+
+        const result = [];
+        let eggREmoved = 0;
+        for (let i = 0; i < reversedFoods.length; i++) {
+          if (reversedFoods[i] === 'egg' && eggREmoved < 2) {
+            eggREmoved ++;
+            continue;
+          }
+          
+          result.push(reversedFoods[i]);
+          
+        }
+        return result;
+      }
+
+      console.log(removeEgg(['egg','apple','egg','egg','ham']));
+    </script>
+  </body>
+</html>
