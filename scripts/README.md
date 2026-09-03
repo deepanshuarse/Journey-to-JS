@@ -1,8 +1,8 @@
 ## ⚡ JavaScript Learning
-```md
+
 > A collection of my JavaScript learning and practice.
 
-All my JavaScript files are stored in the **`js` folder**.
+All my JavaScript files are stored in the **script folder**.
 
 The folder contains:
 - 🧠 JavaScript practice files
