@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+
+button {
+  height: 70px;
+  width: 70px;
+  border: none;
+  margin-right: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.output {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.operation {
+  background-color: rgb(208, 121, 29);
+}
