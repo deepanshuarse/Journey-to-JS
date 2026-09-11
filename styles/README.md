@@ -11,6 +11,7 @@ The **HTML and CSS files use the same name** so that the corresponding styleshee
 |HTML File|Corresponding CSS File|
 |---|---|
 |`ex12.12.html`|`styles/ex12.12.css`|
+|`07-calculator.html`||`07-calculator.css`|
 
 ### Example
 
